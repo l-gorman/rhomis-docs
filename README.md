@@ -1,6 +1,6 @@
 # Documentation for RHoMIS 2.0
 
-Skeleton for RHoMIS 2.0 documentation built using sphinx. 
+Skeleton for RHoMIS 2.0 documentation built using sphinx. I thought this would be useful in case we wanted to document our work as we go along. During my last project, I saved all of this documentation until the end and found it made things much more difficult.
 
 Install dependencies with `pip install -r requirements.txt`. Make the documentation with the command `make html`. The documentation can then be found in the `_build` directory. To view the documentation in your browser, open the file `_build/html/index.html` in your browser. 
 
