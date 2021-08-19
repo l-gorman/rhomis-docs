@@ -18,9 +18,9 @@ import myst_parser
 
 # -- Project information -----------------------------------------------------
 
-project = 'rhomis-docs'
-copyright = '2021, Leo Gorman'
-author = 'Leo Gorman'
+project = 'RHoMIS 2.0'
+copyright = '2021, Léo Gorman'
+author = 'Léo Gorman'
 
 
 # -- General configuration ---------------------------------------------------

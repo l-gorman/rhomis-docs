@@ -7,9 +7,9 @@ Welcome to the RHoMIS Guide
 
 .. toctree::
    :maxdepth: 3
-   :caption: About RHoMIS
+   :caption: About RHoMIS 2.0
 
-   source/what-is-rhomis.rst
+   source/overview.rst
    source/quickstart.rst
    source/using-this-guide.rst
 
