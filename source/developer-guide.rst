@@ -25,23 +25,36 @@ Generally, this should be the first point the user lands. When accessing the sur
 ODK Central
 ******************************
 
-For data collection and data management, RHoMIS currently relies on `ODK collect <https://docs.getodk.org/collect-intro/>`_ and `ODK central <https://docs.getodk.org/central-intro/>`_. To make projects and 
+For data collection and data management, RHoMIS currently relies on `ODK collect <https://docs.getodk.org/collect-intro/>`_ and `ODK central <https://docs.getodk.org/central-intro/>`_. Users should not have to use ODK central, and should instead create projects and forms through the survey builder application. 
 
-Analysis Scripts
+Analysis Package
 ******************************
+
+RHoMIS 2.0 relies on the R programming language for it's automated processing, calculations, and reporting. An [R-package](https://github.com/l-gorman/rhomis-R-package) has been developed for RHoMIS 2.0 data processing. This package, is designed for use on the data-processing server, as well as for use by the wider community who hope to analyse rhomis data themselves.
+
 
 RHoMIS database
 ******************************
 
+RHoMIS 2.0 uses MongoDB, a popular NoSQL database. This central database stores:
+
+* Processed data from ODK central
+* Meta data from the survey builder
+* User information from the authentication server
+* User inputs from the data querying application
+
+
 Data Querying Dashboard
 ******************************
+
+This is a simple GUI application which allows users to access their processed data, and query the public RHoMIS database. 
 
 .. _user_authentication_summary:
 
 User Authentication System
 *******************************
 
-To create an account or login, the survey builder makes a call to the user authentication server. When logging in, the authentication server returns a token which can be decoded to give a user ID. This user ID is shared between the survey builder, the RHoMIS database, and the authentication system to manage survey projects.
+To create an account or login, an application makes a request to the user authentication server. When logging in, the authentication server returns a token which can be decoded to give a user ID. This user ID is used by each RHoMIS application to manage survey projects.
 
 
 
