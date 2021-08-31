@@ -7,7 +7,6 @@ Welcome to the RHoMIS Guide
 
    source/overview.rst
    source/quickstart.rst
-   source/using-this-guide.rst
 
 .. toctree::
    :maxdepth: 3
