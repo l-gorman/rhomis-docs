@@ -3,37 +3,33 @@ Welcome to the RHoMIS Guide
 
 .. toctree::
    :maxdepth: 3
-   :caption: test caption
+   :caption: Getting Started
 
    source/overview.rst
-
-.. toctree::
-   :maxdepth: 3
-
    source/quickstart.rst
-
-.. toctree::
-   :maxdepth: 3
-
    source/using-this-guide.rst
 
 .. toctree::
    :maxdepth: 3
+   :caption: Designing Surveys
 
    source/survey-builder.rst
 
 .. toctree::
    :maxdepth: 3
+   :caption: Collecting Data
 
    source/data-collection.rst
 
 .. toctree::
    :maxdepth: 3
+   :caption: Processing Data
 
    source/data-processing.rst
 
 .. toctree::
    :maxdepth: 3
+   :caption: Contrinuting to RhoMIS 2.0
 
    source/developer-guide.rst
 
