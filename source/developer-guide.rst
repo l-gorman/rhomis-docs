@@ -3,6 +3,11 @@
 Developer Guide
 ===========================================
 
+This developer guide is to help potential contributors understand how RHoMIS 2.0 components generally work
+and how they interact with one another. It does not cover installation, testing, and contributions. Nor does 
+it cover the specifics of the source code. For a more in depth look at how to install, test, and contribute, we
+recommend looking at the GitHub repositories for each of the individual components. 
+
 Summary of the RHoMIS 2.0 System
 -------------------------------------------
 
@@ -30,7 +35,7 @@ For data collection and data management, RHoMIS currently relies on `ODK collect
 Analysis Package
 ******************************
 
-RHoMIS 2.0 relies on the R programming language for it's automated processing, calculations, and reporting. An [R-package](https://github.com/l-gorman/rhomis-R-package) has been developed for RHoMIS 2.0 data processing. This package, is designed for use on the data-processing server, as well as for use by the wider community who hope to analyse rhomis data themselves.
+RHoMIS 2.0 relies on the R programming language for it's automated processing, calculations, and reporting. An `R-package <https://github.com/l-gorman/rhomis-R-package>`_ has been developed for RHoMIS 2.0 data processing. This package, is designed for use on the data-processing server, as well as for use by the wider community who hope to analyse rhomis data themselves.
 
 
 RHoMIS database
