@@ -31,4 +31,7 @@ Welcome to the RHoMIS Guide
    :caption: Contrinuting to RhoMIS 2.0
 
    source/developer-guide.rst
+   source/survey-builder-dev.rst
+   source/analysis-scripts-dev.rst
+   source/data-querying-dashboard-dev.rst
 
