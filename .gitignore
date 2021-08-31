@@ -1,2 +1,3 @@
 _build/
 env/
+copy_diagrams.sh

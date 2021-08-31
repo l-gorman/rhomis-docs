@@ -1,5 +1,6 @@
-===========================================
 Developer Guide
 ===========================================
 
-Welcome to the developer guide
+
+
+.. image:: images/system_summary.png
