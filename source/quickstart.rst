@@ -10,7 +10,10 @@ update the documentation regularly. The main stages are as follows
 For now, we are using this guide to give all of the necessary information for people participating in the monthly
 RHoMIS 2.0 meetings
 
-Below we have information on the RHoMIS 2.0 backend processes (excluding the survey builder).
+Below we have links to the repositories of RHoMIS 2.0 components and the API documentation. 
+To learn more about how the whole system operates, please see the :ref:`developer_guide`
+
+.. _important_links:
 
 Important Links
 -----------------------------------------------

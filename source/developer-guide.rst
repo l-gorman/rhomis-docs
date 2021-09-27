@@ -8,6 +8,8 @@ components generally work and how they interact with one another. It does not co
 and contributions, nor does it cover the specifics of the source code. For a more in depth look at how to install, 
 test, and contribute, we recommend looking at the GitHub repositories for each of the individual components. 
 
+For a quick overview, To access the individual repositories and other essential information, please go to :ref:`important_links`
+
 Summary of the RHoMIS 2.0 System
 -------------------------------------------
 .. figure:: images/system_summary.png
@@ -101,40 +103,31 @@ This package, is designed for use on the data-processing server,
 as well as for use by the wider community who hope to analyse rhomis data themselves.
 
 On the RHoMIS server, there are a series of data-processing scripts which use functions from the
-RHoMIS package to process data. 
+RHoMIS package to manage metadata, generate mock responses, and process data. The user authenticates 
+using the authentication system. The authentication server checks which projects the user has access to. 
+From the RHoMIS data application, the user can request to generate/process data for the projects they have
+access to. They make a request to the API, which calls the R scripts. The R scripts request raw data from ODK central, 
+and project information from the authentication server. The scripts process the data and write the output
+to the RHoMIS database.
 
 
 Querying and Download
 ******************************
 
-All RHo
-RHoMIS 2.0 uses MongoDB, a popular NoSQL database. This central database stores:
-
-* Processed data from ODK central
-* Meta data from the survey builder
-* User information from the authentication server
-* User inputs from the data querying application
+The query and download interface calls the authentication API to obtain a user token.
+This user token is then sent to the RHoMIS data API and decoded to identify the relevant user.
+The user is then able to access their own project data and project-metadata through the API.
 
 .. image:: images/querying_data.png
 
-
-Data Querying Dashboard
-******************************
-
-This is a simple GUI application which allows users to access their processed data, and query the public RHoMIS database. 
 
 .. _user_authentication_summary:
 
 User Authentication System
 *******************************
 
-To create an account or login, an application makes a request to the user authentication server. When logging in, the authentication server returns a token which can be decoded to give a user ID. This user ID is used by each RHoMIS application to manage survey projects.
+To create an account or login, an application makes a request to the user authentication server. 
+When logging in, the authentication server returns a token which can be decoded to give a user ID. 
+This user ID is used by each RHoMIS application to manage survey projects.
 
-
-The Process
-===============================
-
-
-Querying Data
---------------------------------
 

@@ -30,7 +30,7 @@ For a more in depth look at each of the components, you can navigate through eac
 (if you are using the online documentation) or using the table of contents (if you are using the pdf documentation). 
 In each section you will find further details on the individual RHoMIS 2.0 components.
 
-If you want to contribute to RHoMIS 2.0, please see our :ref:`developer_guide`. 
+If you want to contribute to RHoMIS 2.0, or you want to understand how it is built, please see our :ref:`developer_guide`. 
 
 
 
