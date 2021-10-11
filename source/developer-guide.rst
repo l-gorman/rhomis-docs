@@ -52,13 +52,13 @@ Survey creation
     For more information, please see :ref:`survey_builder_dev`.
 
 
-The survey builder is the first place a user should land when they decide to use RHoMIS 2.0. 
-When accessing the survey builder, the user will be prompted to create an account or login. The survey builder
-will send a request to the user authentication system.
-See the :ref:`user_authentication_summary` for more details about user login and registration. 
-Once a user is logged in, they will be able to create projects and forms using the survey builder. 
-This sends requests through the Auth API and creates the forms in ODK Central. Simultaneously, this 
-information is sent to the RHoMIS database.
+#. The user visits the survey builder.
+#. They login or create an account
+#. The survey builder sends a request to the authentication API.
+#. If registering, the authentication service makes an account on ODK central. (The user can then login)
+#. Once logged in, the user can create forms and projects.
+#. Form and project creation is done through the authentication API. The authentication API stores project and form information, and ensures that this is added to the RHoMIS database.
+
 
 Data collection
 ******************************
@@ -67,14 +67,14 @@ Data collection
 
     Data collection schematic.
 
+
 For data collection and the management of raw data RHoMIS 2.0 currently relies on 
 `ODK collect <https://docs.getodk.org/collect-intro/>`_ and `ODK central <https://docs.getodk.org/central-intro/>`_. 
-After users have created an account, a project, and a form on the RHoMIS system, these will be available on ODK
-central. Data collectors will then need to download the ODK collect application to collect data.
-To configure the ODK collect app, users will need a QR code. Currently they have to go on to ODK central
-to access this QR code, however, there are ways to generate this QR code both on the rhomis data app and the survey builder.
 
-Once ODK collect is configured, users can begin collecting data.
+#. Users download the ODK collect application.
+#. They configure the application using a QR code (currently only accessible through ODK central)
+#. They collect surveys using ODK collect and upload them to ODK central.
+
 
 Data processing
 *******************************
@@ -88,30 +88,21 @@ An `R-package <https://github.com/l-gorman/rhomis-R-package>`_ has been develope
 This package, is designed for use on the data-processing server, 
 as well as for use by the wider community who hope to analyse rhomis data themselves.
 
-On the RHoMIS server, there are a series of data-processing scripts which use functions from the
-RHoMIS package to manage metadata, generate mock responses, and process data. The user authenticates 
-using the authentication system. The authentication server checks which projects the user has access to. 
-From the RHoMIS data application, the user can request to generate/process data for the projects they have
-access to. They make a request to the API, which calls the R scripts. The R scripts request raw data from ODK central, 
-and project information from the authentication server. The scripts process the data and write the output
-to the RHoMIS database.
+#. User visits the RHoMIS GUI
+#. They login, and send a request to process their data
+#. The request is then sent to the "Data API"
+#. The "data API" calls the processing scripts (which mainly rely on functions from the RHoMIS R package)
+#. The processing scripts pull raw data from ODK central. Process data and calculate key indicators through a series of queries.
+#. The processed data and other outputs are saved to the RHoMIS database.
 
 
 Querying and Download
 ******************************
 
-The query and download interface calls the authentication API to obtain a user token.
-This user token is then sent to the RHoMIS data API and decoded to identify the relevant user.
-The user is then able to access their own project data and project-metadata through the API.
+#. The query and download interface calls the authentication API to obtain a user token.
+#. This user token is then sent to the RHoMIS data API and decoded to identify the relevant user.
+#. The user is then able to access their own project data and project-metadata through the API.
 
 .. image:: images/querying_data.png
 
 
-.. _user_authentication_summary:
-
-User Authentication System
-*******************************
-
-To create an account or login, an application makes a request to the user authentication server. 
-When logging in, the authentication server returns a token which can be decoded to give a user ID. 
-This user ID is used by each RHoMIS application to manage survey projects.
