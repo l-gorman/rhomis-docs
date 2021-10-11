@@ -15,10 +15,7 @@ Summary of the RHoMIS 2.0 System
 .. figure:: images/system_summary.png
 
     A summary of the RHoMIS 2.0 system components
-    and how they interact. At the top we have the 
-    front ent application we expect the users to use.
-    Going from left to right we have the expected user
-    journey for someone deciding to use RHoMIS 2.0
+    and how they interact.
 
 RHoMIS 2.0 us made up of a series of interoperable applications. 
 Users can interact with these components in a range of ways. 
@@ -26,7 +23,7 @@ However, generally we expect users to interact with components in the following 
 
 #. Survey builder
 #. ODK system
-#. Data querying dashboard
+#. Data querying dashboard (GUI)
 
 Broadly, there are a few key tasks we expect users of RHoMIS 2.0 to carry out:
 
@@ -36,43 +33,32 @@ Broadly, there are a few key tasks we expect users of RHoMIS 2.0 to carry out:
 * Data processing
 * Data querying and download
 
-To simplify the system, we demonstrate how each of the RHoMIS components interact for each of these processes.
+At the centre of the system we have the RHoMIS authentication API. 
+This is used to manage users, projects, and forms. It ensures that all
+other components are up to date. 
+
+To simplify the system, we have broken the system down to show how it
+works for key processes.
+
 
 Survey creation
 ********************************
 
 .. figure:: images/building_survey.png
 
-    A summary of how componentes interact for the "survey creation" process.
+    A summary of how components interact for the "survey creation" process.
     Irrelevant components and interactions have been blacke/greyed out.
     Please note that the survey builder has its own backend, where survey module information is stored. 
     For more information, please see :ref:`survey_builder_dev`.
 
 
-Generally, the survey builder is the first place a user should land when they decide to use RHoMIS 2.0. 
+The survey builder is the first place a user should land when they decide to use RHoMIS 2.0. 
 When accessing the survey builder, the user will be prompted to create an account or login. The survey builder
 will send a request to the user authentication system.
 See the :ref:`user_authentication_summary` for more details about user login and registration. 
-Once a user is logged in, they will be able to create projects and forms using the survey builder.
-
-
-User, Project, and Form Management
-**********************************************
-
-.. figure:: ./images/creating_projects_and_forms.png
-
-    Illustration of how user, project, and form management works in RHoMIS 2.0.
-
-The RHoMIS authentication system is designed to synchronize with ODK central. So when a user creates
-an account with the RHoMIS authentication system, this creates a user account on ODK central.
-When a user creates a project, or sends a form to RHoMIS, this does the same on ODK central. This
-ensures that the RHoMI authentication system is always up-to-date with the ODK central database and
-that we know which users are associated with which projects/forms.
-
-This can all be done through an API, allowing both the survey-builder, and the front-end data app
-to manage project information.
- 
-
+Once a user is logged in, they will be able to create projects and forms using the survey builder. 
+This sends requests through the Auth API and creates the forms in ODK Central. Simultaneously, this 
+information is sent to the RHoMIS database.
 
 Data collection
 ******************************
@@ -129,5 +115,3 @@ User Authentication System
 To create an account or login, an application makes a request to the user authentication server. 
 When logging in, the authentication server returns a token which can be decoded to give a user ID. 
 This user ID is used by each RHoMIS application to manage survey projects.
-
-
