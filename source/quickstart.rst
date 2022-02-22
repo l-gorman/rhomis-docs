@@ -9,12 +9,6 @@ update the documentation regularly. For now, we are using this guide to give all
 RHoMIS 2.0 meetings.
 
 
-
-
-
-
-
-
 .. _important_links:
 
 Important Links

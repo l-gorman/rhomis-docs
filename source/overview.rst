@@ -4,20 +4,19 @@ Overview
 What is RHoMIS
 --------------------------------------------
 The Rural Household Multi-Indicator Survey (RHoMIS) has been
-widely used since 2015. RHoMIS is a suite of tools designed to
-collect harmonised data on smallholder farmers. Since 2020, the 
-RHoMIS team have been working on RHoMIS 2.0, an improved version of
-the RHoMIS system. Automation of processes is the focus of 
-RHoMIS 2.0. The improved tool consists of a set of interoperable tools 
-used to simplify survey design, data management, and data processing. 
+widely used since 2015. RHoMIS consists of a suite of tools designed to
+collect harmonised and interoperable data on smallholder farmers. Since 2020, the 
+RHoMIS team have been working on new version of RHoMIS. We have focused on automation,
+to help the wider community build their own surveys, process their own data, and contriubte
+to the wider development of RHoMIS. 
 
-It consists of the following main components:
+The new version of RHoMIS consists of a set of interoperable tools 
+used to simplify survey design, data management, and data processing. The main components are:
 
-#. **Survey module library**: A library of standard survey modules on key topics related to smallholder agriculture.
-#. **Survey builder interface**: A graphical user interface which helps users design surveys by selecting from the module library.
-#. **Data collection and management software**: For data collection we use the `ODK Collect  <https://docs.getodk.org/collect-intro/>`_ application. For data management, we use the `ODK Central <https://docs.getodk.org/central-intro/>`_ application.
-#. **Automated data processing**: An R-package that makes it easier to process raw data, calculate key indicators, and generate reporting output.
-#. **Dashboard**: A dashboard-style application which can be used to access processed datasets.
+#. **Management Console**: An application to manage survey forms, collaborators, and data. 
+#. **Survey Builder**: A tool to build surveys, drawing on a bank of survey modules.
+#. **Data collection and management software**: We use `ODK Collect  <https://docs.getodk.org/collect-intro/>`_ to collect data, `ODK Central <https://docs.getodk.org/central-intro/>`_ to manage survey uploads. 
+#. **Data Processing Tools**: We want to make data processing and analysis as simple as possible. We have made made an R-package, for you to conduct your own analyses. This package is also used to process the data, made accessible in the management console described above.
 
 Using this Guide
 -------------------------------------------------
@@ -30,7 +29,7 @@ For a more in depth look at each of the components, you can navigate through eac
 (if you are using the online documentation) or using the table of contents (if you are using the pdf documentation). 
 In each section you will find further details on the individual RHoMIS 2.0 components.
 
-If you want to contribute to RHoMIS 2.0, or you want to understand how it is built, please see our :ref:`developer_guide`. 
+There are many ways you can contribute to RHoMIS. See our contribution guide for more details. 
 
 
 

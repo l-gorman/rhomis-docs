@@ -30,6 +30,7 @@ Welcome to the RHoMIS Guide
    :maxdepth: 3
    :caption: Contrinuting to RhoMIS 2.0
 
+   source/technical-system-overview.rst
    source/developer-guide.rst
    source/survey-builder-dev.rst
    source/analysis-scripts-dev.rst
