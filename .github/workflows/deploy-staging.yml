@@ -65,8 +65,8 @@ jobs:
           cd _build/html
           git init
           git add -A
-          git config --local user.email "${{GITHUBEMAIL}}"
-          git config --local user.name "${{GITHUBUSERNAME}}"
+          git config --local user.email "${{secrets.GITHUBEMAIL}}"
+          git config --local user.name "${{secrets.GITHUBUSERNAME}}"
           git commit -m 'deploy'
 
       - name: Force push to destination branch
