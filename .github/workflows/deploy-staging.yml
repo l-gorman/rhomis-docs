@@ -62,6 +62,7 @@ jobs:
 
       - name: Init new repo in build folder and commit generated files
         run: |
+          touch _build/html/.nojekyll
           cd _build/html
           git init
           git add -A
