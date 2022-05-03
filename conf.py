@@ -18,7 +18,7 @@ import myst_parser
 
 # -- Project information -----------------------------------------------------
 
-project = 'RHoMIS 2.0'
+project = 'RHoMIS'
 copyright = '2021, Léo Gorman'
 author = 'Léo Gorman'
 
@@ -55,6 +55,10 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 #html_static_path = ['_static']
 html_static_path = []
+
+html_theme_options = {
+    'prev_next_buttons_location': 'both'
+}
 
 
 
