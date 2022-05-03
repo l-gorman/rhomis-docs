@@ -51,22 +51,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build app
+      - name: Make HTML
         run: make html
       
 
-      - name: Modify CNAME file to contain correct directory
-        run: |
-          file_contents=$(<./build/CNAME) &&
-          echo "${file_contents//'TESTDOMAIN'/'app.l-gorman.com'}" > ./build/CNAME
+      # - name: Modify CNAME file to contain correct directory
+      #   run: |
+      #     file_contents=$(<./build/CNAME) &&
+      #     echo "${file_contents//'TESTDOMAIN'/'app.l-gorman.com'}" > ./build/CNAME
 
       - name: Init new repo in build folder and commit generated files
         run: |
-          cd build
+          cd _build/html
           git init
           git add -A
-          git config --local user.email "lgorman@turing.ac.uk"
-          git config --local user.name "l-gorman"
+          git config --local user.email "${{GITHUBEMAIL}}"
+          git config --local user.name "${{GITHUBUSERNAME}}"
           git commit -m 'deploy'
 
       - name: Force push to destination branch
