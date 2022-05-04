@@ -18,7 +18,6 @@ docutils==0.16
 entrypoints==0.4
 executing==0.8.3
 fastjsonschema==2.15.3
-GDAL==3.4.2
 idna==3.2
 imagesize==1.2.0
 importlib-metadata==4.11.3
