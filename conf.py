@@ -15,6 +15,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 import myst_parser
+import os
 
 # -- Project information -----------------------------------------------------
 
@@ -40,7 +41,8 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store','env/*',
-                    'README.md', 'copy_diagramns.sh']
+                    'README.md', 'copy_diagramns.sh', "source/utils/links-production.rst", 
+                    "source/utils/links-staging.rst"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -67,3 +69,29 @@ source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
 }
+
+
+# make rst_epilog a variable, so you can add other epilog parts to it
+rst_epilog =""
+# Read link all targets from file
+
+docenv = os.getenv("DOCENV")
+if (docenv=="production"):
+    links_file="./source/utils/links-production.rst"
+elif (docenv=="staging"):
+    links_file="./source/utils/links-staging.rst"
+else:
+    raise ValueError("""
+
+    Did not specify whether staging or production environment.
+    Please include DOCENV=staging or DOCENV=production in your
+    command""")
+
+
+print("docenv")
+print(docenv)
+
+with open(links_file) as f:
+     rst_epilog += f.read()
+
+print(rst_epilog)

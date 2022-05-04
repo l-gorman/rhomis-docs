@@ -19,7 +19,6 @@ name: Deploy staging
 on:
   push:
     branches:
-      - main
       - staging
 
 jobs:
@@ -52,7 +51,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Make HTML
-        run: make html
+        run: make html DOCENV=staging
       
 
       # - name: Modify CNAME file to contain correct directory

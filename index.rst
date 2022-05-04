@@ -3,7 +3,10 @@ The Rural Househol Multi-Indicator Survey (RHoMIS)
 
 .. note::
    Want to begin start using RHoMIS, go right to the
-   `RHoMIS App <https://app.l-gorman.com>`_ 
+   `RHoMIS App`_.
+
+.. _app link: https://app.l-gorman.com
+
 
 RHoMIS was designed to improve the process of gathering 
 information from farming households in the rural developing world. 
@@ -22,39 +25,53 @@ The tool is designed to minimise the burden on the rural household,
 to maximise the reliability of responses, and to improve consistency 
 between different studies.
 
-Learn more about RHoMIS :ref:`here <overview>`
+Learn more about what makes RHoMIS :ref:`here <overview>`
+
+Scientific Background
+###################################
+
+The RHoMIS tool has been built with a high level of scientific rigour. 
+The survey includes proven and widely accepted indicators such as the 
+Food Insecurity Experience Scale (FIES), the Household Dietary Diversity 
+Score (HDDS),  the Hunger and Food Insecurity Access Scale (HFIAS), 
+Food Availabilty (FA), and the Progress out of Poverty Index (PPI). 
+
+Over 15 scientific papers about the tool have either been published or are in 
+the process of being published. You can also view more matierials on `RHoMIS Scientific Output`_
+
 
 .. toctree::
-   :maxdepth: 3
-   :caption: First Steps
+   :maxdepth: 2
+   :caption: User Guide
 
-   source/quickstart.rst
-   source/overview.rst
-
-.. toctree::
-   :maxdepth: 3
-   :caption: Designing Surveys
-
-   source/survey-builder.rst
-
-.. toctree::
-   :maxdepth: 3
-   :caption: Collecting Data
-
-   source/data-collection.rst
+   source/user-guide/first-time-user.rst
+   source/user-guide/building-a-survey.rst
+   source/user-guide/collecting-data.rst
+   source/user-guide/editing-a-survey.rst
+   source/user-guide/processing-data.rst
+   source/user-guide/additional-features.rst
+   source/user-guide/faqs.rst
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Processing Data
+   :maxdepth: 2
+   :caption: About RHoMIS
 
-   source/data-processing.rst
+   source/about-rhomis/overview.rst
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contrinuting to RhoMIS 2.0
+   :maxdepth: 2
+   :caption: Contributing to RHoMIS
 
-   source/developer-guide.rst
-   source/survey-builder-dev.rst
-   source/analysis-scripts-dev.rst
-   source/data-querying-dashboard-dev.rst
+   source/contributor-guide/contributor-guide.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Developer Guide
+
+   source/developer-guide/developer-guide.rst
+   source/developer-guide/survey-builder-dev.rst
+
+
+
 

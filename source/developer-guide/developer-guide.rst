@@ -46,7 +46,7 @@ Code Repositories
 
 Summary of the RHoMIS 2.0 System
 -------------------------------------------
-.. figure:: images/system_summary.png
+.. figure:: ../images/system_summary.png
 
     A summary of the RHoMIS 2.0 system components
     and how they interact.
@@ -78,7 +78,7 @@ works for key processes.
 Survey creation
 ********************************
 
-.. figure:: images/building_survey.png
+.. figure:: ../images/building_survey.png
 
     A summary of how components interact for the "survey creation" process.
     Irrelevant components and interactions have been blacke/greyed out.
@@ -97,7 +97,7 @@ Survey creation
 Data collection
 ******************************
 
-.. figure:: ./images/collecting_data.png
+.. figure:: ../images/collecting_data.png
 
     Data collection schematic.
 
@@ -113,7 +113,7 @@ For data collection and the management of raw data RHoMIS 2.0 currently relies o
 Data processing
 *******************************
 
-.. figure:: images/processing_data.png
+.. figure:: ../images/processing_data.png
 
     Schematic of processing steps
 
@@ -137,6 +137,6 @@ Querying and Download
 #. This user token is then sent to the RHoMIS data API and decoded to identify the relevant user.
 #. The user is then able to access their own project data and project-metadata through the API.
 
-.. image:: images/querying_data.png
+.. image:: ../images/querying_data.png
 
 

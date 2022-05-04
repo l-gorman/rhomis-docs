@@ -1,6 +1,6 @@
 .. _survey_builder_dev:
 
-Survey Builder 
+Contributor Guide
 ==================================
 
 Essential information
@@ -22,7 +22,7 @@ The survey builder gives information to the following components of RHoMIS 2.0:
 Processes
 ------------------------------------
 
-.. image:: images/survey_builder_process.png
+.. image:: ../images/survey_builder_process.png
 
 We begin by the user registering to use RHoMIS through the authentication server. The user sends a request with their email and password. They are then assigned an ID and their password is hashed and stored. When logging in, the user gives their email and password. This is verified, and a token is returned to the authenticated user. This token is decoded by the survey builder, and the user ID is stored locally in the survey builder database. 
 
@@ -36,12 +36,12 @@ Database
 Projects Users and Forms
 ************************************
 
-.. image:: images/users_forms_projects.png
+.. image:: ../images/users_forms_projects.png
 
 
 Survey Module 
 ************************************
 
-.. image:: images/survey_modules.png
+.. image:: ../images/survey_modules.png
 
 
