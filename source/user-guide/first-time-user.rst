@@ -10,16 +10,20 @@ If you using RHoMIS for the first time, you will need
 to create an account. Visit the `RHoMIS App`_. When 
 opening the app, you will be directed to the login page.
 
-Click the option to register, shown in the red box below.
+Click the option to register, as shown in the video below.
 Fill in the form and then submit, you will be redirected
 back to the login page. Use the username and password 
 you have just entered, and login
 
+.. youtube:: M0lMZK9KHy8
+    :width: 100%
 
-.. image:: ../images/login-register.png
+
 
 RHoMIS Portal
 #############################
+
+
 
 Once you have logged in for the first time 
 the main RHoMIS application will look like this:

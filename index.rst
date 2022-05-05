@@ -39,6 +39,10 @@ Food Availabilty (FA), and the Progress out of Poverty Index (PPI).
 Over 15 scientific papers about the tool have either been published or are in 
 the process of being published. You can also view more matierials on `RHoMIS Scientific Output`_
 
+---------------------------------------
+
+Contents
+=========================================
 
 .. toctree::
    :maxdepth: 2
@@ -47,7 +51,6 @@ the process of being published. You can also view more matierials on `RHoMIS Sci
    source/user-guide/first-time-user.rst
    source/user-guide/building-a-survey.rst
    source/user-guide/collecting-data.rst
-   source/user-guide/editing-a-survey.rst
    source/user-guide/processing-data.rst
    source/user-guide/additional-features.rst
    source/user-guide/faqs.rst
@@ -66,7 +69,7 @@ the process of being published. You can also view more matierials on `RHoMIS Sci
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Developer Guide
 
    source/developer-guide/developer-guide.rst
