@@ -52,7 +52,6 @@ Contents
    source/user-guide/building-a-survey.rst
    source/user-guide/collecting-data.rst
    source/user-guide/processing-data.rst
-   source/user-guide/additional-features.rst
    source/user-guide/faqs.rst
 
 .. toctree::
@@ -60,6 +59,7 @@ Contents
    :caption: About RHoMIS
 
    source/about-rhomis/overview.rst
+
 
 .. toctree::
    :maxdepth: 2
