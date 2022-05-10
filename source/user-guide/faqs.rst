@@ -1,6 +1,7 @@
 Dealing with Issues
-=================
+=====================
 
+Here you can report `Issues`_
 
 FAQs
 ########################################
