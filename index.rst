@@ -61,19 +61,7 @@ Contents
    source/about-rhomis/overview.rst
 
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contributing to RHoMIS
 
-   source/contributor-guide/contributor-guide.rst
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Developer Guide
-
-   source/developer-guide/developer-guide.rst
-   source/developer-guide/survey-builder-dev.rst
 
 
 

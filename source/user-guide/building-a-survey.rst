@@ -179,7 +179,6 @@ in RHoMIS surveys. For example, with "crop_sale_price_quantityunits",
 common options include "total_income_per_year", "price_per_kg", "price_ber_bag_50kg",
 and "price_per_tonne".
 
-
 - **crop_list**: The list of crops grown
 - **livestock_list**: The list of livestock kept
 - **cropyield_units**: Common units in kg for the amount of crop harvested per year (e.g. sacks_10kg)
@@ -187,6 +186,13 @@ and "price_per_tonne".
 - **offfarm_incomes**: What sources of off-farm income are common
 - **fert_units**: Common units for fertiliser (kg)
 - **milk_units**: Common units form milk (litres)
+
+.. warning:: 
+    Only add customised elements after selecting some of the default options
+
+
+
+|
 
 .. youtube:: W8as6TAd-WE
     :width: 100%

@@ -1,20 +1,15 @@
 Dealing with Issues
 =====================
 
-Here you can report `Issues`_
+The development of RHoMIS is ongoing
+and we know there are things that may 
+need to improve. We welcome your input.
+Here you can report `Issues`_.
 
-FAQs
-########################################
+Contributions
+#####################
 
-
-Forms and Projects
--------------------------------------------
-
-What are projects and what are forms?
-**********************************************************************************
-
-What is the difference between draft and finalized projects?
-**********************************************************************************
-
-How do I make changes to a finalized project?
-**********************************************************************************
+All of our code is open source and we 
+welcome contributions. We are working 
+on guidelines for contributors and 
+hope to make them available soon
